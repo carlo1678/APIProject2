@@ -4,6 +4,7 @@ const getNasaData = async () => {
   );
   const formattedJson = await data.json();
   formattedJson.forEach((element) => {
+    console.log(element);
     let container = document.createElement("div");
     let image = document.createElement("img");
     let secondContainer = document.createElement("div");
